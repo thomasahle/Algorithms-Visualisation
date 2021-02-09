@@ -24,7 +24,7 @@ class BubbleSortScene(Scene):
 
 	def construct(self):
 
-		title = TextMobject("Bubble Sort", color = GOLD).scale(2)
+		title = Text("Bubble Sort", color = GOLD).scale(2)
 		title.to_corner(UL)
 
 		self.play(
@@ -41,7 +41,7 @@ class BubbleSortScene(Scene):
 		squares.arrange(buff = 0.)
 	
 	
-		nums = [TextMobject(str(i)) for i in self.arr]
+		nums = [Text(str(i)) for i in self.arr]
 		for i in range(N):
 			nums[i].move_to(squares[i].get_center())
 
